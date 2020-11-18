@@ -6,7 +6,7 @@ module.exports = function (app) {
 
     app.get('/api/companies/:id', companies.findById);
 
-    app.post('/api/companies', companies.addCompany);
+    app.post('/api/companies/storeCompany', companies.addCompany);
 
     app.put('/api/companies/:id', companies.updateById);
 
