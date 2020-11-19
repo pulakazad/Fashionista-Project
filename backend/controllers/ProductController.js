@@ -15,6 +15,7 @@ exports.findAll = (req, res) => {
 exports.findById = (req, res) => {
     Product.findById(req.params.id, (err, product) => {
         if (err) throw err;
+        console.log(product)
         res.send(product);
     })
 };
